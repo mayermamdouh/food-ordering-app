@@ -72,6 +72,7 @@ cd food-ordering-app
 ```
 
 2. Install dependencies:
+
 npm install
 # or
 yarn install
@@ -98,6 +99,7 @@ CLOUDINARY_API_SECRET="your-api-secret"
    npx prisma migrate dev
 
 5. Start the development server:
+
    npm run dev
 # or
     yarn dev
