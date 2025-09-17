@@ -37,7 +37,7 @@ export const ChooseQuantityButton = ({
           onClick={() =>
             dispatch(
               addCartItem({
-                price: item.price,
+                price: item.basePrice,
                 id: item.id,
                 image: item.image,
                 name: item.name,

@@ -1,6 +1,5 @@
 "use server";
 
-// import { Pages, Routes } from "@/constants/enums";
 import { Locale } from "@/i18n.config";
 import { getCurrentLocale } from "@/lib/getCurrentLocale";
 import { db } from "@/lib/prisma";

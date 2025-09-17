@@ -3,13 +3,13 @@ import { Label } from "../ui/label";
 import { Checkbox as ShadcnCheckbox } from "../ui/checkbox";
 
 interface Props {
-  onClick?: () => void;
-  checked: boolean;
-  label: IFormField["label"];
+  checked?: boolean;
+  label?: IFormField["label"];
   name: IFormField["name"];
+  onClick?: () => void;
 }
 
-const Checkbox = ({ label, name, checked, onClick }: Props) => {
+const Checkbox = ({ label, name, checked = false, onClick }: Props) => {
   return (
     <div className="text-accent flex items-center gap-2">
       <ShadcnCheckbox
@@ -20,7 +20,7 @@ const Checkbox = ({ label, name, checked, onClick }: Props) => {
         checked={checked}
       />
       <Label htmlFor={name} className="text-sm font-normal">
-        {label}
+        {label ?? ""}
       </Label>
     </div>
   );

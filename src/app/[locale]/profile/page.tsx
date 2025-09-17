@@ -12,7 +12,7 @@ import React from "react";
 export default async function Profile({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
   const session = await getServerSession(authOptions);
   const { locale } = await params;
