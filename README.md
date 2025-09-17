@@ -8,7 +8,7 @@ The app provides:
 
 - **User features** for browsing the menu, customizing items, placing orders, and authentication.
 - **Admin dashboard** for managing **categories, products, sizes, extras, and customer orders**.
-- **Bilingual support**: English & Arabic.
+- **Bilingual support**: English 🇬🇧 & Arabic 🇸🇦.
 
 ---
 
@@ -49,16 +49,16 @@ The app provides:
 ## 📂 Project Structure
 
 src/
-├── app/                 # Next.js App Router (routes, API, localization)
-├── components/          # Reusable UI components
-├── constants/           # App-wide constants and configuration
-├── dictionaries/        # Internationalization (i18n) language dictionaries
-├── hooks/               # Custom React hooks
-├── lib/                 # Third-party libraries and utilities
-├── provider/            # React Context providers
-├── store/               # State management (Redux Toolkit)
-├── types/               # TypeScript type definitions
-└── validations/         # Data validation schemas
+├── app/ # Next.js App Router (routes, API, localization)
+├── components/ # Reusable UI components
+├── constants/ # App-wide constants and configuration
+├── dictionaries/ # Internationalization (i18n) language dictionaries
+├── hooks/ # Custom React hooks
+├── lib/ # Third-party libraries and utilities
+├── provider/ # React Context providers
+├── store/ # State management (Redux Toolkit)
+├── types/ # TypeScript type definitions
+└── validations/ # Data validation schemas
 
 ---
 
@@ -72,30 +72,21 @@ cd food-ordering-app
 ```
 
 2. Install dependencies:
+   npm install
 
-npm install or yarn install
+# or
 
-3. 🔑 Environment Variables
+yarn install
 
-Create a .env.local file in the root of your project and add the following variables:
-
-# Database connection
-DATABASE_URL="postgresql://USERNAME:PASSWORD@localhost:5432/DATABASE_NAME?schema=public"
-
-# NextAuth
-NEXTAUTH_SECRET="your-generated-secret"
-NEXT_PUBLIC_BASE_URL="http://localhost:3000"
-
-# Cloudinary
-CLOUDINARY_CLOUD_NAME="your-cloud-name"
-CLOUDINARY_API_KEY="your-api-key"
-CLOUDINARY_API_SECRET="your-api-secret"
-
-
+3. Setup environment variables:
+   Create a .env file and configure your database URL, NextAuth secret, etc.
 
 4. Run database migrations:
    npx prisma migrate dev
 
 5. Start the development server:
+   npm run dev
 
-   npm run dev or yarn dev
+# or
+
+    yarn dev
