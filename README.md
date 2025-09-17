@@ -78,9 +78,8 @@ yarn install
 
 3. 🔑 Environment Variables
 
-Create a `.env.local` file in the root of your project and add the following variables:
+Create a .env.local file in the root of your project and add the following variables:
 
-```env
 # Database connection
 DATABASE_URL="postgresql://USERNAME:PASSWORD@localhost:5432/DATABASE_NAME?schema=public"
 
