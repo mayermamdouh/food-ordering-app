@@ -8,7 +8,7 @@ The app provides:
 
 - **User features** for browsing the menu, customizing items, placing orders, and authentication.
 - **Admin dashboard** for managing **categories, products, sizes, extras, and customer orders**.
-- **Bilingual support**: English 🇬🇧 & Arabic 🇸🇦.
+- **Bilingual support**: English & Arabic.
 
 ---
 
@@ -73,9 +73,7 @@ cd food-ordering-app
 
 2. Install dependencies:
 
-npm install
-# or
-yarn install
+npm install or yarn install
 
 3. 🔑 Environment Variables
 
@@ -100,6 +98,4 @@ CLOUDINARY_API_SECRET="your-api-secret"
 
 5. Start the development server:
 
-   npm run dev
-# or
-    yarn dev
+   npm run dev or yarn dev
