@@ -5,11 +5,12 @@ import AddToCartButton from "./AddToCartButton";
 import { ProductWithRelations } from "@/types/product";
 
 export default function MenuItem({ item }: { item: ProductWithRelations }) {
+  console.log("item.image: ", item.image);
   return (
     <li>
       <div className="relative h-48 w-48 mx-auto">
         <Image
-          src="/assets/images/sandwich.png"
+          src={item.image}
           alt={item.name}
           fill
           className="object-cover"

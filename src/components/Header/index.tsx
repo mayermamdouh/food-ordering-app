@@ -16,7 +16,7 @@ export default async function Header() {
     <header className="py-4 md:py-6">
       <div className="container flex items-center justify-between gap-5">
         <MyLink
-          className="text-primary font-semibold text-2xl"
+          className="text-primary font-semibold text-2xl mr-10"
           href={`/${locale}`}
         >
           🍔 {translations.logo}

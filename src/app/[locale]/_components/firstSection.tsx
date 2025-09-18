@@ -44,15 +44,12 @@ export default async function FirstSection() {
             </MyLink>
           </div>
         </div>
-        <div className="relative hidden md:block w-full max-w-[500px] h-[250px] overflow-hidden flex-1">
+        <div className="relative hidden md:block w-full max-w-[400px] h-[210px] overflow-hidden flex-1">
           <Image
-            src="/assets/images/sandwich.png"
+            src={`/${locale}/sandwich.png`}
             alt="sandwich"
             fill
-            loading="eager"
-            priority
-            className="object-contain "
-            sizes="500"
+            className="object-contain"
           />
         </div>
       </div>

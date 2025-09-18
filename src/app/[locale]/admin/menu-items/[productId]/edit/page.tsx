@@ -30,7 +30,7 @@ async function EditProductPage({
   return (
     <main>
       <section>
-        <div className="container">
+        <div className="container ">
           <Form
             categories={categories}
             translations={translations}

@@ -8,7 +8,6 @@ import {
   addCategorySchema,
   updateCategorySchema,
 } from "@/validations/category";
-
 import { revalidatePath } from "next/cache";
 
 export const addCategory = async (prevState: unknown, formData: FormData) => {

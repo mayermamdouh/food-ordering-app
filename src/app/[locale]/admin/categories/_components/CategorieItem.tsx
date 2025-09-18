@@ -1,7 +1,7 @@
 import { Category } from "@prisma/client";
+import EditCategory from "./EditCategory";
 import { getCurrentLocale } from "@/lib/getCurrentLocale";
 import getTrans from "@/lib/translation";
-import EditCategory from "./EditCategory";
 import DeleteCategory from "./DeleteCategory";
 
 async function CategoryItem({ category }: { category: Category }) {

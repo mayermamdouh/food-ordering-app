@@ -37,7 +37,7 @@ export const addProduct = async (
     : undefined;
   try {
     if (imageUrl) {
-      console.log("data: ", data);
+      // console.log("data: ", data);
       await db.product.create({
         data: {
           ...data,

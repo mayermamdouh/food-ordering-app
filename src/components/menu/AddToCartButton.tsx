@@ -75,12 +75,7 @@ export default function AddToCartButton({
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px] max-h-[80vh] overflow-y-auto">
           <DialogHeader className="flex items-center">
-            <Image
-              src="/assets/images/sandwich.png"
-              alt={item.name}
-              width={200}
-              height={200}
-            />
+            <Image src={item.image} alt={item.name} width={200} height={200} />
             <DialogTitle>{item.name}</DialogTitle>
             <DialogDescription className="text-center">
               {item.description}
